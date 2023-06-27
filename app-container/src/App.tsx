@@ -1,4 +1,4 @@
-
+import MyButton from 'remoteApp/Button'
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
               <div className='basis-1/3 border-purple-700 border-2'>
                   <div className='text-center w-full'>APP1 - React</div>
                   <div className='my-3 mx-2'>APP1 CONTENT  LOADING ...</div>
+                  <MyButton/>
               </div>
               <div className='basis-1/3 border-cyan-700 border-2'>
                   <div className='text-center w-full' >APP2 - React</div>
