@@ -1,0 +1,14 @@
+{
+  "name": "micro-fe-react",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "preview:remotes": "pnpm --filter app-1 --filter app-2 preview",
+    "dev": "pnpm preview:remotes & pnpm --filter app-container dev",
+    "kill": "lsof -i -P -n | grep -E ':(5000|5001)' | awk '{print $2}' | sort -u | xargs kill -9"
+      },
+  "engines": {
+    "node": "^22.11.0"
+  }
+}
